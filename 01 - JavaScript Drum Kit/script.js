@@ -11,11 +11,11 @@ function playKeyboard(e) {
 }
 
 function removeTransform(e) {
-    if (e.propertyName !== "transform") return;
-    e.target.classList.remove("playing");
+  if (e.propertyName !== "transform") return;
+  e.target.classList.remove("playing");
 }
 
-const allKeys =  Array.from(document.querySelectorAll(".key"))
+const allKeys = Array.from(document.querySelectorAll(".key"))
 allKeys.forEach((item) => {
   item.addEventListener("transitionend", removeTransform);
 });

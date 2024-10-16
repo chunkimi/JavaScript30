@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+  <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+
+<body>
+  <h2>Update <span class="hight-light">CSS</span> Variables with <span class='hight-light'>JS</span></h2>
+
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+    <label for="base">Base Color</label>
+    <input id="base" type="color" name="base" value="#ffc600">
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1417325384643-aac51acc9e5d?q=75&fm=jpg&w=400&fit=max">
+
+  <style>
+    /*
+      misc styles, nothing to do with CSS variables
+    */
+    :root {
+      --base: #ffc600;
+      --spacing: 10px;
+      --blur: 1px;
+    }
+
+
+    img {
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+
+    .hight-light {
+      color: var(--base)
+    }
+
+    body {
+      text-align: center;
+      background: #193549;
+      color: white;
+      font-family: 'helvetica neue', sans-serif;
+      font-weight: 100;
+      font-size: 50px;
+    }
+
+    .controls {
+      margin-bottom: 50px;
+    }
+
+    input {
+      width: 100px;
+    }
+  </style>
+
+  <script>
+
+    const inputList = Array.from(document.querySelectorAll('.controls input'))
+
+    function updateSetting() {
+      const unit = this.dataset.sizing || '';
+      const value = this.value;
+      const type = this.name;
+
+      document.documentElement.style.setProperty(`--${type}`, `${value}${unit}`);
+
+    }
+
+    inputList.forEach((inputItem) => inputItem.addEventListener('change', updateSetting))
+    inputList.forEach((inputItem) => inputItem.addEventListener('mousemove', updateSetting))
+  </script>
+
+</body>
+
+</html>
