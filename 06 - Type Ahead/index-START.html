@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Type Ahead 👀</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+
+<body>
+
+  <form class="search-form">
+    <input type="text" class="search" placeholder="City or State">
+    <ul class="suggestions">
+      <li>Filter for a city</li>
+      <li>or a state</li>
+    </ul>
+  </form>
+  <script>
+    console.clear()
+    const endpointUrl = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+
+    const citiesData = []
+
+    const searchBar = document.querySelector('.search')
+    const suggestions = document.querySelector('.suggestions')
+
+    async function init() {
+      const rawData = await getCitiesData()
+      citiesData.push(...rawData)
+    }
+
+    async function getCitiesData() {
+      try {
+        const res = await fetch(endpointUrl)
+        if (!res.ok) {
+          throw new Error(`HTTP error! Status: ${res.status}`)
+        }
+
+        const data = await res.json()
+        return data
+      } catch (err) {
+        console.log(`error message : ${err}`)
+        return []
+      }
+    }
+
+    function searchKeyword(regexKey, allData) {
+      return allData.filter((cityItem) => {
+        return cityItem.city.match(regexKey) || cityItem.state.match(regexKey)
+      })
+    }
+
+    function numberWithCommas(origin) {
+      return origin.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
+
+
+    function renderResult(data, regexKey, originKey) {
+
+      const rawHtml = data.map((item) => {
+        const cityName = item.city.replace(regexKey, `<span class="hl">${originKey}</span>`);
+        const stateName = item.state.replace(regexKey, `<span class="hl">${originKey}</span>`);
+
+        return `
+          <li>
+             <span class="name">${cityName}, ${stateName}</span>
+             <span class="population">${numberWithCommas(item.population)}</span>
+          </li>
+        `
+      }).join()
+
+      suggestions.innerHTML = rawHtml
+    }
+
+    function handleSearch() {
+      const keyword = this.value
+      const regexKey = new RegExp(keyword, 'gi')
+      const searchResult = searchKeyword(regexKey, citiesData)
+      renderResult(searchResult, regexKey, keyword)
+    }
+
+
+    searchBar.addEventListener('change', handleSearch)
+    searchBar.addEventListener('keyup', handleSearch)
+    init()
+  </script>
+</body>
+
+</html>
