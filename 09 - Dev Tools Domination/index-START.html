@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+  <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+
+    console.clear()
+
+    // Regular
+    console.log("regular")
+
+    // Interpolated
+    console.log("It is Interpolated %S", "text word")
+
+    // Styled
+    console.log("%C It is styled", 'color:yellow')
+
+    // warning!
+
+    console.warn('It is warning')
+
+    // Error
+
+    console.error('It is error')
+
+    // Info
+
+    console.info('It is info')
+
+    // Testing
+    console.assert(1 === 3, 'assert mes :this is false')
+
+    // clearing
+    // console.clear()
+
+    // Viewing DOM Elements
+    const pElement = document.querySelector('p');
+    console.log(pElement)
+    console.dir(pElement)
+
+    // Grouping together
+
+    dogs.forEach((dog) => {
+      console.groupCollapsed(`${dog.name}`)
+      console.log("first: name", dog.name)
+      console.log("second: age", dog.age)
+      console.groupEnd(`${dog.name}`)
+    })
+
+    // counting
+    console.count('A')
+    console.count('A')
+    console.count('A')
+    console.count('B')
+    console.count('D')
+    console.count('D')
+
+    // table
+    console.table(dogs)
+
+    // timing
+    const url = 'https://api.github.com/users/wesbos'
+
+    console.time('fetch here')
+    fetch(url).then(data => data.json())
+      .then(data => {
+        console.timeEnd('fetch here');
+      });
+
+
+
+  </script>
+</body>
+
+</html>
