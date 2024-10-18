@@ -1,4 +1,4 @@
-#
+# 06 - Type Ahead
 
 ## key point
 - Fetch API [MDN](https://developer.mozilla.org/zh-TW/docs/Web/API/Fetch_API/Using_Fetch)
