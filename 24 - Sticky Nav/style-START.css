@@ -99,4 +99,6 @@ body.fixed-nav .site-wrap {
   transform: scale(1);
 }
 
-.fixed-nav li .logo {}
+.fixed-nav li.logo {
+  max-width: 500px;
+}
