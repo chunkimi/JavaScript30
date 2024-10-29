@@ -25,14 +25,14 @@
 | 18 | Tally String Times with Reduce | 時間算法應用，加總所有的影片時間，並轉換時間格式 | Array.from()、Array.prototype.map()、String.prototype.split()、Array.prototype.reduce()、Math.floor() |
 | 19 | Unreal Webcam Fun | 客製視訊畫面，以及提供不同的影像特效 | navigator.mediaDevices.getUserMedia、canvas、setInterval、ctx.drawImage() |
 | 20 | Native Speech Recognition | 利用 Web Speech API 製作語音轉文字，並且畫面中顯示文字的筆記本空間會隨之增加 | SpeechRecognition、interimResults、result 事件、Array.from()、transcript、end 事件 |
-| 21 | Whack A Mole Game | 打地鼠遊戲 | setTimeout、querySelectorAll、classList、Math.random()、addEventListener |
-| 22 | Geolocation based Speedometer and Compass | 指南針功能 | navigator.geolocation.watchPosition、successCallback、errorCallback |
-| 23 | Follow Along Links | 製作聚光燈效果，當滑鼠移動到指定內容（案例是`<a>`）會有聚光燈效果，加強提示重點 | document.querySelectorAll、mouseenter 事件、getBoundingClientRect()、scrollY、scrollX、transform |
-| 24 | Speech Synthesis | 利用 Web Speech API 製作文字的語音朗讀的功能，並可以選擇AP內建的不同人聲 | Web Speech API、SpeechSynthesisUtterance、speechSynthesis.getVoices() |
-| 25 | Sticky Nav | 固定導覽列 | scroll 事件、offsetTop、classList |
-| 26 | Event Capture, Propagation, Bubbling and Once | 事件捕獲Capture、冒泡Bubbling、一次性Once與各種設定 | addEventListener、capture、stopPropagation、once |
-| 27 | Stripe Follow Along Dropdown | 製作縮放下拉選單，並提供與選單尺寸對應的白色底框 | mouseenter、mouseleave、getBoundingClientRect()、transform |
-| 28 | Click and Drag to Scroll | 手動選轉的燈箱 | mousedown、mouseleave、mouseup、mousemove、scrollLeft |
-| 29 | Video Speed Controller UI | 客製影片速率調整器 | mousemove、pageY、offsetHeight、playbackRate |
-| 30 | Countdown Clock | 倒數計時器 | data-time 屬性、setInterval、Date.now()、clearInterval |
+| 21 | Geolocation based Speedometer and Compass | 指南針功能 | navigator.geolocation.watchPosition、successCallback、errorCallback |
+| 22 | Follow Along Links | 製作聚光燈效果，當滑鼠移動到指定內容（案例是`<a>`）會有聚光燈效果，加強提示重點 | document.querySelectorAll、mouseenter 事件、getBoundingClientRect()、scrollY、scrollX、transform |
+| 23 | Speech Synthesis | 利用 Web Speech API 製作文字的語音朗讀的功能，並可以選擇AP內建的不同人聲 | Web Speech API、SpeechSynthesisUtterance、speechSynthesis.getVoices() |
+| 24 | Sticky Nav | 固定導覽列 | scroll 事件、offsetTop、classList |
+| 25 | Event Capture, Propagation, Bubbling and Once | 事件捕獲Capture、冒泡Bubbling、一次性Once與各種設定 | addEventListener、capture、stopPropagation、once |
+| 26 | Stripe Follow Along Dropdown | 製作縮放下拉選單，並提供與選單尺寸對應的白色底框 | mouseenter、mouseleave、getBoundingClientRect()、transform |
+| 27 | Click and Drag to Scroll | 手動選轉的燈箱 | mousedown、mouseleave、mouseup、mousemove、scrollLeft |
+| 28 | Video Speed Controller UI | 客製影片速率調整器 | mousemove、pageY、offsetHeight、playbackRate |
+| 29 | Countdown Clock | 倒數計時器 | data-time 屬性、setInterval、Date.now()、clearInterval |
+| 30 | Whack A Mole Game | 打地鼠遊戲 | setTimeout、querySelectorAll、classList、Math.random()、addEventListener |
 
