@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Video Speed Scrubber</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <video class="flex" width="765" height="430" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" loop
+      controls></video>
+    <div class="speed">
+      <div class="speed-bar">1×</div>
+    </div>
+  </div>
+
+  <script>
+    const video = document.querySelector(".flex")
+    const speedWarp = document.querySelector(".speed")
+    const speedBar = document.querySelector(".speed-bar")
+
+    const rateMin = 0.4
+    const rateMax = 4
+    const rateRange = rateMax - rateMin
+
+    let isChangeRate = false
+
+    function handleMove(e) {
+      if (!isChangeRate) return
+      const y = e.pageY - this.offsetTop
+      const percent = y / this.offsetHeight
+
+      const speedBarHeight = `${Math.round(percent * 100)}%`
+      const playbackRate = percent * rateRange + rateMin
+
+      speedBar.style.height = speedBarHeight
+      speedBar.textContent = `${playbackRate.toFixed(2)} X`
+
+      video.playbackRate = playbackRate
+
+    }
+
+    speedWarp.addEventListener('mousedown', () => {
+      isChangeRate = true
+    })
+
+    speedWarp.addEventListener('mousemove', handleMove)
+
+    speedWarp.addEventListener('mouseup', () => {
+      isChangeRate = false
+    })
+
+    speedWarp.addEventListener('mouseleave', () => {
+      isChangeRate = false;
+    });
+
+
+  </script>
+</body>
+
+</html>
