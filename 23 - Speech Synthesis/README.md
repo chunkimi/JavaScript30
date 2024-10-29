@@ -1,5 +1,8 @@
 # Speech Synthesis
 
+## 內容
+利用 Web Speech API 製作文字的語音朗讀的功能，並可以選擇AP內建的不同人聲。
+
 ## 步驟拆解
 #### Step 1: 加載語音
 - **事件監聽器**: 

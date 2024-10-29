@@ -1,5 +1,9 @@
-# 09 - Dev Tools Domination
-## key point Console 功能整理
+# 09 - 14 Must Know Dev Tools Tricks
+
+## 內容
+Console 功能整理
+
+## key point 
 - **`console.log()`**   : 可以在控制台輸出普通訊息。
 - **`console.warn()`**  : 可以輸出警告訊息，通常以黃色標示。
 - **`console.error()`** : 可以輸出錯誤訊息，通常以紅色標示。

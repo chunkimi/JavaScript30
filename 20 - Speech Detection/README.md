@@ -1,4 +1,7 @@
-# 20 - Speech Detection
+# 20 - Native Speech Recognition
+
+## 內容
+利用 Web Speech API 製作語音轉文字，並且畫面中顯示文字的筆記本空間會隨之增加。
 
 ## 重點
 

@@ -1,6 +1,9 @@
-# 10 - Hold Shift and Check Checkboxes
-## 重點
+# 10 - Hold Shift to Check Multiple Checkboxes
 
+## 內容
+透過滑鼠點擊和鍵盤Shift 鍵，實行指定範圍內的項目連選功能
+
+## 重點
 - **事件處理** ：使用 `click` 事件來捕捉用戶對復選框的操作，當用戶點擊復選框時觸發自定義邏輯。
 
 -  **Shift 鍵檢測** ：使用 `e.shiftKey`來檢測用戶是否按下了 Shift 鍵，從事件對象中讀取屬性以實現條件判斷。

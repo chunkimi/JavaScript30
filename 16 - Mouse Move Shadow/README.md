@@ -1,4 +1,7 @@
-# 16 - Mouse Move Shadow
+# 16 - CSS Text Shadow Mouse Move Effect
+
+## 內容
+畫面上的出現多色陰影並且隨滑鼠移動而變換位置
 
 ## 重點： 動態陰影效果
 

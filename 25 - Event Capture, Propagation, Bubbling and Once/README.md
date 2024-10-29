@@ -1,7 +1,9 @@
 # Event Capture, Propagation, Bubbling and Once
 
-## 重點
+## 內容
+事件捕獲Capture、冒泡Bubbling、一次性Once與各種設定
 
+## 重點
 ### 1: 基本事件綁定
 1. **選取所有 `div` 元素**：
    - 使用 `document.querySelectorAll("div")` 選取頁面中所有的 `div`，並儲存到 `boxes` 變數中。

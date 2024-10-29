@@ -1,5 +1,8 @@
 # 08  Fun with HTML5 Canvas
 
+## 內容
+滑鼠按下後，可以透過拖曳在畫面上畫畫。
+
 ## key point
 - [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
 - [Mother-effing hsl](https://mothereffinghsl.com/)
@@ -11,7 +14,6 @@
 ### HTML5 Canvas  設定
 
 ### HTML5 Canvas 繪圖功能
-
 ### 滑鼠事件綁定
 #### 1. `mousedown`
 - **描述**：當用戶按下鼠標按鍵時觸發。
