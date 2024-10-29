@@ -1,4 +1,9 @@
-# 18 - Adding Up Times with Reduce
+# 18 - Tally String Times with Reduce
+
+## 內容
+時間算法應用，加總所有的影片時間，並轉換時間格式
+
+## 筆記
 
 - **將 NodeList 轉換成陣列**：使用 `Array.from()` 將選取到的 DOM 節點轉換為 JavaScript 陣列，方便後續操作。
 

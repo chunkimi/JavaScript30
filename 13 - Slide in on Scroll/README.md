@@ -1,7 +1,9 @@
-# 13 - Slide in on Scroll
+# 13 - Slide In on Scroll
+
+## 內容
+圖片隨頁面滑動，依序漸入漸出
 
 ## 重點
-
 ### 1. Debounce 函數 (原始提供)
 - 用於控制觸發`handleSlide`事件的頻率，以避免滾動事件頻繁觸發導致性能問題。
 - **參數**：

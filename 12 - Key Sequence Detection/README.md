@@ -1,4 +1,7 @@
-# 12 - Key Sequence Detection
+# 12 - Key Sequence Detection (KONAMI CODE)
+
+## 內容
+猜密碼
 
 ## 重點
 - **事件監聽類型** : 使用 `keyup` 事件更符合預期，因為按鍵釋放後才是完整的輸入動作。

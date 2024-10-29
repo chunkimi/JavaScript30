@@ -1,7 +1,9 @@
 # Whack A Mole Game
 
-## 重點
+## 內容
+打地鼠遊戲
 
+## 重點
 ### 1. **初始化元素選擇與遊戲設定**
    - `const holes = document.querySelectorAll('.hole')`: 選取所有洞口元素，存入 `holes`。
    - `const scoreBoard = document.querySelector('.score')`: 選取分數顯示區塊，用來更新分數。
