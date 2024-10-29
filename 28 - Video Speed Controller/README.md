@@ -1,5 +1,8 @@
 # Video Speed Controller UI
 
+## 內容
+客製影片速率調整器
+
 ## 重點
 
 ### 1. 初始化元素選擇與事件監聽

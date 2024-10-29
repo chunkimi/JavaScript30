@@ -1,4 +1,7 @@
-# 17 - Sort Without Articles
+# 17 - Sorting Band Names without articles
+
+## 內容
+先移除冠詞，在幫樂隊名稱依首字字母排序
 
 ## 重點
 - **`bands` 陣列**: 包含所有需要排序的樂隊名稱，一些名稱包含冠詞（如 "a", "an", "the"）。

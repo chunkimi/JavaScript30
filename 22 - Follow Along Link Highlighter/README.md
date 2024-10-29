@@ -1,5 +1,9 @@
 # Follow Along Links
 
+## 內容
+製作聚光燈效果，當滑鼠移動到指定內容（案例是`<a>`），會有聚光燈效果，加強提示重點
+
+
 ## 重點
 
 1. **選取元素 (`document.querySelectorAll`)**

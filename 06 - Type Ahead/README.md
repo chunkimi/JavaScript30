@@ -1,4 +1,7 @@
-# 06 - Type Ahead
+# 06 - Ajax Type Ahead
+
+## 內容
+從遠端取得城市data，在篩選框輸入英文字母，過濾出符合的城市
 
 ## key point
 - Fetch API [MDN](https://developer.mozilla.org/zh-TW/docs/Web/API/Fetch_API/Using_Fetch)
@@ -13,7 +16,6 @@
 - String.prototype.match() [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
 
 - String.prototype.includes() [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
-
 
 
 ## 步驟拆解

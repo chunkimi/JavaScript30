@@ -1,4 +1,7 @@
-# 11 - Custom Video Player
+# 11 - Custom HTML5 Video Player
+
+## 內容
+自製影片播放器
 
 ## 重點
 - HTML5 Video API 

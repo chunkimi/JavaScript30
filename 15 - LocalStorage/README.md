@@ -1,7 +1,7 @@
 # 15 - LocalStorage and Event Delegation
 
-## 重點
-# 15 - LocalStorage and Event Delegation
+## 內容
+to do list 待辦清單
 
 ## 重點
 

@@ -1,5 +1,9 @@
 # Click and Drag to Scroll
 
+## 內容
+手動選轉的燈箱
+
+
 ## 重點
 1. **選取元素**
    - 使用 `const wrap = document.querySelector(".items")` 選取包含項目的主要容器 `.items`，將其儲存到 `wrap` 變數中，方便後續操作。
